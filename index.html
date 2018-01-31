@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<script src="controller.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center text-info">Gerador de Jogos MegaSena</h1>
+
+      <div class="row">
+        <input id="qtdJogos" type="text" class="form-control" placeholder="Insira Quantos jogos quer Fazer">
+        <button class="btn btn-block btn-info mx-auto" onclick="plotaOsJogos() ">Gerar Jogos</button>
+        <table class="table table-info">
+          <tr>
+            <th>Acertou 1</th>
+            <th>Acertou 2</th>
+            <th>Acertou 3</th>
+            <th>Quadra</th>
+            <th>Quina</th>
+            <th>Sena</th>
+          </tr>
+          <tr>
+            <td id="Acertou1">X</td>
+            <td id="Acertou2">X</td>
+            <td id="Acertou3">X</td>
+          <td id="GanhouQuadra">X</td>
+          <td id="GanhouQuina">X</td>
+          <td id="GanhouSena">X</td>
+        </tr>
+        </table>
+      </div>
+
+      <div id="jogos" class="text-center text-info">
+        <br>
+
+      </div>
+
+    </div>
+    <footer class="text-center text-info"><small>Criado por Lennon S Furtado</small></footer>
+  </body>
+</html>
